@@ -48,7 +48,7 @@ resource "aws_security_group" "openvpn" {
 
   tags = {
     Name        = "${lower(terraform.workspace)}_${lower(var.stack_name)}"
-    Environment = "lacuna-prod"
+    Environment = ""
     Stack       = lower(var.stack_name)
   }
 }

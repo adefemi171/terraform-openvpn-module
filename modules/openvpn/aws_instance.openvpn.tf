@@ -15,7 +15,7 @@ resource "aws_instance" "openvpn" {
 
   tags = {
     Name        = "OpenVPN Access Server"
-    Environment = lower(terraform.workspace) #lacuna-prod
+    Environment = lower(terraform.workspace) #
     Stack       = lower(var.stack_name)
   }
 }

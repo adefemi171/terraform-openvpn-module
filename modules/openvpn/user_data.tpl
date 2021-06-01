@@ -30,7 +30,7 @@ apt install -y libwww-perl libdatetime-perl
 
 # INSTALL CERTBOT
 apt install certbot
-sudo certbot certonly -d vpn.prod.infra.lacuna-tech.io
+sudo certbot certonly -d <pass_vpn>
 
 # INSTALL CLOUDWATCH MONITORING SCRIPTS
 echo "INSTALL CLOUDWATCH MONITORING SCRIPTS"
@@ -59,7 +59,7 @@ set -u
 set -o pipefail
 
 
-DOMAIN="vpn.prod.infra.lacuna-tech.io"
+DOMAIN=""
 
 if diff -q /etc/letsencrypt/live/$DOMAIN/cert.pem \
         /usr/local/openvpn_as/etc/web-ssl/server.crt; then
