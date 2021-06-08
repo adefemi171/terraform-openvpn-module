@@ -10,3 +10,5 @@
 1. Run `terraform apply`.
 1. After it's done deploying, the project will output URLs or IPs you can try out.
 1. To clean up and delete all resources after you're done, run `terraform destroy`.
+
+**Note**: This module was first used in this [repo](https://github.com/gadgetry-io/tf-aws-openvpn)
